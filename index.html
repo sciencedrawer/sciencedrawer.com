@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>과학자의 서랍</title>
+<meta name="description" content="과학자의 서랍 — 과학고 수준의 탐구 경험을 모든 학생에게. 질문을 세우고 실험을 설계하는 과학 탐구 교육.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgYXJpYS1sYWJlbD0i6rO87ZWZ7J6Q7J2YIOyEnOuejSIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjx0aXRsZT7qs7ztlZnsnpDsnZgg7ISc656NPC90aXRsZT48IS0tISBTY2llbmNlIERyYXdlciAvIOqzvO2VmeyekOydmCDshJzrno0gc3ltYm9sLCBmaW5hbCAyMDI2LTEwLTI3OiBkcmF3ZXIgZnJvbnQgKyBicmFzcyBjdXAgcHVsbCArIHJlYWdlbnQgZHJvcGxldC4gMTYtdW5pdCBncmlkLi0tPjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzBGMUEyRCIgcng9IjMuNSIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yLjM1IDdoMTEuM2MuMzMgMCAuNi4yNy42LjZ2NS4zYS42LjYgMCAwIDEtLjYuNkgyLjM1YS42LjYgMCAwIDEtLjYtLjZWNy42YzAtLjMzLjI3LS42LjYtLjYiLz48cGF0aCBmaWxsPSIjRDRBMjNBIiBkPSJNNS41IDkuM2g1di42YzAgMS4wOC0xLjEyIDEuOTUtMi41IDEuOTVzLTIuNS0uODctMi41LTEuOTVaTTggLjljLjIxIDIuMTIgMS4xNSAyLjgxIDEuMTUgMy44NSAwIC42NC0uNTEgMS4xNS0xLjE1IDEuMTVzLTEuMTUtLjUxLTEuMTUtMS4xNWMwLTEuMDQuOTQtMS43MyAxLjE1LTMuODUiLz48L3N2Zz4=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500;600&family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<meta property="og:title" content="과학자의 서랍 · Science Drawer">
+<meta property="og:description" content="과학고 실험실에서 하던 탐구를 어느 학교 학생이든. 질문을 세우고 실험을 설계하는 과학 탐구 교육.">
+<meta property="og:url" content="https://sciencedrawer.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+/* layout: single-column editorial site on paper; catalog-card grid for method; navy band for winter program; navy footer */
+:root{
+  color-scheme: light;
+  --paper:#F7F4EE; --paper-2:#EFEAE0; --card:#FFFDF8;
+  --navy:#0F1A2D; --ink:#0F1A2D; --sub:#3B3F45; --rule:#D9D3C7; --rule-2:#A9AEB6;
+  --gold:#D4A23A; --navy-2:#1A2740;
+  --f-en:"Brygada 1918", Georgia, "Times New Roman", serif;
+  --f-ko:"Gowun Batang", "AppleMyungjo", "Nanum Myeongjo", serif;
+  --f-body:"IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --w:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;word-break:keep-all;overflow-wrap:anywhere}
+.wrap{max-width:var(--w);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--navy);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--f-ko);font-weight:700;text-wrap:balance;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--sub)}
+
+/* draft notice */
+.draft{background:var(--navy);color:#fff;font-size:13px;text-align:center;padding-block:8px}
+.draft b{color:var(--gold);font-weight:600}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(247,244,238,.94);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--rule)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--paper)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
+.top .logo{display:block;flex:0 0 auto}
+.top .logo svg{height:34px;width:auto;display:block}
+nav.menu{display:flex;gap:26px;font-size:15px}
+nav.menu a{text-decoration:none;color:var(--sub)}
+nav.menu a:hover{color:var(--ink)}
+@media (max-width:760px){nav.menu{display:none}.top .logo svg{height:28px}}
+
+/* hero */
+.hero{padding-block:88px 72px;border-bottom:1px solid var(--rule)}
+.hero .grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:end}
+.hero h1{font-size:clamp(34px,5.4vw,58px);line-height:1.22;margin-top:18px}
+.hero .lead{margin-top:24px;font-size:18px;color:var(--sub);max-width:34em}
+.hero .actions{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:2px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid var(--navy)}
+.btn.solid{background:var(--navy);color:#fff}
+.btn.solid:hover{background:var(--navy-2)}
+.btn.line{background:transparent;color:var(--navy)}
+.btn.line:hover{background:var(--paper-2)}
+.tagline{font-family:var(--f-en);font-style:italic;font-weight:500;font-size:20px;color:var(--sub);border-left:2px solid var(--rule-2);padding-left:18px;line-height:1.5}
+.tagline small{display:block;margin-top:10px;font-family:var(--f-body);font-style:normal;font-size:14px}
+@media (max-width:860px){.hero{padding-block:56px 48px}.hero .grid{grid-template-columns:1fr;gap:36px}}
+
+/* sections */
+section.band{padding-block:84px}
+.head{display:grid;grid-template-columns:220px 1fr;gap:32px;margin-bottom:44px}
+.head h2{font-size:clamp(26px,3.4vw,36px);line-height:1.3}
+.head p{margin-top:14px;color:var(--sub);max-width:36em}
+@media (max-width:760px){section.band{padding-block:56px}.head{grid-template-columns:1fr;gap:10px;margin-bottom:28px}}
+
+/* catalog cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--rule);padding:22px 20px 24px;display:flex;flex-direction:column;gap:12px;min-width:0;position:relative}
+.card .no{font-family:var(--f-mono);font-size:12px;color:var(--sub);letter-spacing:.06em;border-bottom:1px solid var(--rule);padding-bottom:10px}
+.card h3{font-size:21px}
+.card p{font-size:15px;color:var(--sub)}
+@media (max-width:960px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+
+/* path */
+.path{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.step{padding:26px 24px 8px 0;border-right:1px solid var(--rule);min-width:0}
+.step:last-child{border-right:none}
+.step+.step{padding-left:24px}
+.step .k{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.step .k span{font-family:var(--f-mono);font-size:12px;color:var(--sub)}
+.tag{font-family:var(--f-body);font-size:12px;font-weight:600;border:1px solid var(--rule-2);color:var(--sub);padding:1px 8px;border-radius:999px;white-space:nowrap}
+.step h3{font-size:22px;margin-top:14px}
+.step .en{font-family:var(--f-en);font-style:italic;color:var(--sub);font-size:15px}
+.step p{margin-top:10px;font-size:15px;color:var(--sub)}
+@media (max-width:760px){.path{grid-template-columns:1fr}.step,.step+.step{padding:22px 0;border-right:none;border-bottom:1px solid var(--rule)}}
+
+/* floor directory */
+.dir{border:1px solid var(--ink);background:var(--card)}
+.dir .row{display:grid;grid-template-columns:70px 1.1fr 1fr 1fr;align-items:center;border-top:1px solid var(--rule);min-height:64px}
+.dir .row:first-child{border-top:none}
+.dir .fl{font-family:var(--f-en);font-weight:600;font-size:26px;text-align:center;border-right:1px solid var(--rule);align-self:stretch;display:grid;place-items:center}
+.dir .nm{padding:12px 20px;font-family:var(--f-en);font-weight:600;font-size:19px}
+.dir .lv,.dir .who{padding:12px 20px;font-size:15px;color:var(--sub)}
+.dir .who{font-family:var(--f-en);font-style:italic;font-size:16px}
+.dir-note{margin-top:14px;font-size:14px;color:var(--sub)}
+.drw{border-top:1px solid var(--rule)}
+.drw:first-child{border-top:none}
+.drw>summary{list-style:none;cursor:pointer;border-top:none}
+.drw>summary::-webkit-details-marker{display:none}
+.drw>summary:hover{background:var(--paper-2)}
+.drw>summary:focus-visible{outline:2px solid var(--navy);outline-offset:-2px}
+.open{font-family:var(--f-body);font-style:normal;font-size:12px;font-weight:600;color:var(--navy);border:1px solid var(--navy);border-radius:999px;padding:1px 10px;margin-left:10px;white-space:nowrap}
+.open::before{content:"서랍 열기"}
+.drw[open] .open::before{content:"서랍 닫기"}
+.open::after{content:" ▾"}
+.drw[open] .open{background:var(--navy);color:#fff}
+.drw[open] .open::after{content:" ▴"}
+.drw .list{list-style:none;margin:0;padding:6px 20px 14px 90px;background:var(--paper-2);border-top:1px dashed var(--rule-2)}
+.drw .list li{display:grid;grid-template-columns:84px 1fr 1fr;gap:6px 18px;align-items:baseline;padding-block:11px;font-size:15px;border-top:1px solid var(--rule)}
+.drw .list .sub{justify-self:start}
+.drw .list .ex{min-width:0}
+@media (max-width:760px){.drw .list li{grid-template-columns:1fr}.drw .list .ex::before{content:"· ";color:var(--sub)}}
+.drw .list li:first-child{border-top:none}
+.drw .sub{flex:0 0 auto;font-size:12px;color:var(--sub);border:1px solid var(--rule-2);border-radius:999px;padding:0 8px;line-height:1.7;background:var(--card)}
+@media (max-width:640px){.drw .list{padding-left:20px}.open{margin-left:0;margin-top:4px;display:inline-block}}
+@media (max-width:640px){.dir .row{grid-template-columns:56px 1fr}.dir .lv,.dir .who{grid-column:2;padding-top:0}.dir .nm{padding-bottom:2px}.dir .fl{grid-row:span 3}}
+
+/* winter */
+.winter{background:var(--navy);color:#fff}
+.winter .eyebrow{color:#C7CCD4}
+.winter .head p{color:#C7CCD4}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--navy);background:var(--gold);padding:4px 12px;border-radius:999px;margin-top:16px}
+.wgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start}
+.facts{border-top:1px solid rgba(255,255,255,.35)}
+.facts .f{display:grid;grid-template-columns:110px 1fr;gap:16px;padding-block:15px;border-bottom:1px solid rgba(255,255,255,.18)}
+.facts dt{color:#C7CCD4;font-size:14px}
+.facts dd{margin:0}
+.tbd{color:#C7CCD4}
+.apply{background:var(--navy-2);border:1px solid rgba(255,255,255,.18);padding:26px}
+.apply h3{font-size:22px}
+.apply p{margin-top:10px;font-size:15px;color:#DCE0E6}
+.apply .btn{margin-top:22px;width:100%;justify-content:center;background:transparent;color:#C7CCD4;border-color:rgba(255,255,255,.35);cursor:not-allowed}
+.legal{margin-top:16px;font-size:13px;color:#AEB4BE;line-height:1.6}
+.fill{border-bottom:1px dashed var(--gold);color:var(--gold)}
+@media (max-width:860px){.wgrid{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact .c{background:var(--card);border:1px solid var(--rule);padding:22px 24px}
+.contact .c h3{font-size:19px}
+.contact .c p{margin-top:8px;color:var(--sub);font-size:15px}
+.ph{font-family:var(--f-mono);font-size:14px;border-bottom:1px dashed var(--rule-2);color:var(--sub)}
+@media (max-width:640px){.contact{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--navy);color:#C7CCD4;padding-block:48px 56px;font-size:13px;line-height:1.8}
+footer .lk svg{height:40px;width:auto;display:block;max-width:100%}
+footer .meta{margin-top:28px;display:flex;flex-wrap:wrap;gap:6px 18px}
+footer .copy{margin-top:8px;color:#8E95A1}
+@media (max-width:520px){footer .lk svg{height:30px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="과학자의 서랍 홈"><svg xmlns="http://www.w3.org/2000/svg" width="751.7" height="114.9" aria-label="과학자의 서랍 로고 — 영문 가로형" role="img" viewBox="5.4 -69.4 751.7 114.9"><title>과학자의 서랍 로고 — 영문 가로형</title><!--! Science Drawer / 과학자의 서랍 logo, final 2026-10-27. Letters outlined to paths. Type: Brygada 1918 SemiBold (SIL OFL 1.1; Mateusz Machalski, Borys Kosmynka, Przemek Hoffer). Colors: navy #0F1A2D, gold #D4A23A.--><path fill="#0F1A2D" d="M18.2-53.8q0 3.6 2 6t5.3 4q3.3 1.7 7.2 3.1l7.8 3.2q3.9 1.8 7.3 4.1 3.3 2.4 5.2 6t2 8.9q0 6.1-3 10.5-2.9 4.4-8.1 6.7Q38.6 1 31.5 1q-5.1 0-9.4-1.2-4.3-1.3-7.7-3.4l-2 3.5H8.9q-.2-3.4-.8-7.4l-1.3-7.9-1.4-6.9 3.3-1q3.3 7.7 7.4 12.1 4 4.5 8.2 6.4Q28.5-3 32.2-3q3.2 0 6.2-1.2 2.9-1.1 4.9-3.5t2-6.1q0-3.8-2-6.4-2-2.5-5.3-4.3t-7.2-3.4L23-31.1q-4-1.7-7.3-4t-5.3-5.6-2-8.2q0-5.9 3-10.2 2.9-4.2 8.1-6.6T31.2-68q4.3 0 7.9 1.2t6.9 3.4l1.9-3.6h3.5q.4 5.1 1.3 10.3t1.9 10l-3.3 1q-2.7-7.5-6.4-11.4t-7.6-5.4Q33.5-64 30.2-64q-5.2 0-8.6 2.8t-3.4 7.4M89.7 1q-6.6 0-12-2.9t-8.8-8.3-3.3-13q0-7.8 3.6-13.3t9.5-8.5q5.9-2.9 12.8-2.9 5 0 9 1.7t6.4 4.5q2.3 2.9 2.3 6.5 0 2.9-1.7 4.6-1.7 1.8-4.2 1.8-2.4 0-4.1-1.7-1.8-1.6-1.8-4.2 0-1.7 1.1-3.4t4-2.2q-1.8-2-4.6-3.1-2.9-1-6.3-1-5.1 0-8.1 2.6-3.1 2.7-4.4 7.3-1.4 4.7-1.4 10.7 0 6.4 1.8 10.9t5 7q3.2 2.4 7.4 2.4 4.5 0 8.3-2.7 3.8-2.6 6.8-6.7l2.7 2.3q-2.3 3.2-5 5.8-2.7 2.7-6.4 4.2Q94.7 1 89.7 1m26.9-1v-3.5h6.4l.7-.7v-38.5l-.7-.7h-6.4v-3.5l5.6-.1 6.2-.2 5.6-.5.7.8v42.7l.7.7h6.4V0Zm12.3-55.6q-2.8 0-4.8-2.1-2.1-2-2.1-4.8 0-2.9 2.1-4.9 2-2 4.8-2t4.9 2 2 4.9q0 2.8-2 4.8-2.1 2.1-4.9 2.1M177-3.5q5.2 0 9.1-2.4t6.5-5.3l2.7 2.3q-2.1 2.5-4.8 4.8T184-.4 174.6 1q-6.5 0-12-2.9t-8.8-8.4-3.4-13.2 3.4-13.1q3.3-5.5 8.8-8.4t12-2.9q6.3 0 11.1 2.4 4.7 2.5 7.4 7.5t2.7 13h-35.3v-3.5h22.9q-.4-7.9-2.6-11.9t-7-4q-3.9 0-6.4 2.6t-3.7 7.3q-1.2 4.8-1.2 11t1.8 10.6 5.1 6.9 7.6 2.5m76.8-.7.8.7h6.3V0h-25.1v-3.5h6.3l.7-.7v-29.2q0-4.8-1.6-7.2t-5.5-2.4q-3.7 0-7 2.6-3.4 2.6-7.1 9v27.2l.7.7h6.4V0h-25.2v-3.5h6.4l.7-.7v-38.5l-.7-.7h-6.4v-3.5l5.5-.1 5.8-.2 5.4-.5.7.8v9h.7q2.6-4.4 6.8-7.2t10.9-2.8q5.3 0 8.5 1.7 3.2 1.8 4.6 4.7t1.4 6.6ZM293.7 1q-6.6 0-12.1-2.9t-8.7-8.3q-3.3-5.5-3.3-13 0-7.8 3.6-13.3t9.5-8.5q5.9-2.9 12.8-2.9 5 0 9 1.7t6.4 4.5 2.3 6.5q0 2.9-1.7 4.6-1.7 1.8-4.2 1.8-2.4 0-4.1-1.7-1.8-1.6-1.8-4.2 0-1.7 1.1-3.4t4-2.2q-1.8-2-4.6-3.1-2.9-1-6.3-1-5.1 0-8.1 2.6-3.1 2.7-4.4 7.3-1.4 4.7-1.4 10.7 0 6.4 1.8 10.9t5 7q3.2 2.4 7.4 2.4 4.5 0 8.3-2.7 3.8-2.6 6.8-6.7l2.7 2.3q-2.3 3.2-5 5.8-2.7 2.7-6.3 4.2-3.7 1.6-8.7 1.6M348-3.5q5.2 0 9.1-2.4t6.5-5.3l2.7 2.3q-2.1 2.5-4.8 4.8T355-.4 345.6 1q-6.5 0-12-2.9t-8.8-8.4-3.4-13.2 3.4-13.1q3.3-5.5 8.8-8.4t12-2.9q6.3 0 11.1 2.4 4.7 2.5 7.4 7.5t2.7 13h-35.3v-3.5h22.9q-.4-7.9-2.6-11.9t-7-4q-3.9 0-6.4 2.6t-3.7 7.3q-1.2 4.8-1.2 11t1.9 10.6 5.1 6.9 7.5 2.5M430.1-67q7.1 0 13.3 2t10.8 6q4.7 4.1 7.3 10.1t2.6 14q0 7.9-2.7 14.3t-7.5 11T443-2.5 430.1 0h-32.6v-3.5h6.8l.8-.7v-58.6l-.8-.7h-6.8V-67Zm-1.9 63.5q6.8 0 12-3.6t8.2-10.4q3-6.7 3-16 0-8.9-3.2-15.7-3.1-6.8-8.5-10.6t-12.5-3.7h-9.4l-.7.7v58.6l.7.7Zm63.9-32.7q2.5-4.8 6.5-8.3t9.4-3.4q2.8 0 4.6 1 1.7 1.1 2.5 2.8t.8 3.6q0 3-1.9 5-2 2.1-5.2 2.1-3 0-5.1-2.1-2.1-2-2.1-5 0-1.4.8-2.9.7-1.5 1.4-2.2l-.1 3.1q-1.9.6-3.6 1.9-1.8 1.4-3.7 4.1t-4.3 7.8Zm0 32 .7.7h9.9V0H474v-3.5h6.3l.8-.7v-38.5l-.8-.7H474v-3.5l5.5-.1 5.7-.2 5.4-.5.7.8v10.7h.8ZM560 1q-3.4 0-5.8-1.3-2.5-1.3-3.7-4.2v-25.7q0-6.2-2.1-9.8-2.2-3.7-8.1-3.7-2.6 0-4.9.5t-4.5 2q1.6.9 2.4 2.3.8 1.5.8 3.2 0 2.6-1.7 4.2t-4.2 1.7-4.2-1.8q-1.7-1.7-1.7-4.6t1.8-5.1T529-45t6.8-2.2 7.2-.7q4.9 0 9.1 1.4t6.8 4.9 2.6 9.9v22.8q0 1.4.6 2.7t2.5 1.3q1.3 0 2.3-.9t1.9-1.9l2.7 2.3q-1.2 1.7-2.7 3.2-1.5 1.4-3.6 2.3T560 1m-23.5 0q-7.9 0-12.5-3.9-4.7-3.8-4.7-9.7t4.6-9.6q4.6-3.9 12.6-3.9 5.2 0 8.6 1.6t5.4 3.9v4.6q-2.7-2.9-5.7-4.2-2.9-1.3-5.6-1.3-4.2 0-6.6 2.4-2.3 2.5-2.3 6.5t2.3 6.5 6.6 2.5q2.7 0 5.6-1.3 3-1.3 5.7-4.3v4.7q-2 2.1-5.4 3.8T536.5 1m93.3-47.9h18.5v3.5h-6L627.7 0h-6.5l-11.9-31h-.5L596.6 0h-6.5L574-43.4h-6.1v-3.5H593v3.5h-5.8l-.7.7 10.4 29h.5l9.4-23.9-2.1-5.8h-4.6v-3.5h22.6v3.5h-5.4l-.7.7 10.7 29h.5l9.7-29-.7-.7h-7Zm47.8 43.4q5.2 0 9.1-2.4t6.5-5.3l2.7 2.3q-2.1 2.5-4.8 4.8t-6.5 3.7-9.4 1.4q-6.5 0-12-2.9t-8.8-8.4-3.4-13.2 3.4-13.1q3.3-5.5 8.8-8.4t12-2.9q6.3 0 11 2.4 4.8 2.5 7.5 7.5t2.7 13h-35.3v-3.5H684q-.4-7.9-2.6-11.9t-7-4q-3.9 0-6.4 2.6t-3.7 7.3q-1.2 4.8-1.2 11t1.9 10.6 5.1 6.9 7.5 2.5m45.7-32.7q2.5-4.8 6.5-8.3t9.4-3.4q2.8 0 4.6 1 1.7 1.1 2.5 2.8t.8 3.6q0 3-1.9 5-2 2.1-5.2 2.1-3 0-5.1-2.1-2.1-2-2.1-5 0-1.4.8-2.9.7-1.5 1.4-2.2l-.1 3.1q-1.9.6-3.7 1.9-1.7 1.4-3.6 4.1t-4.3 7.8Zm0 32 .7.7h9.9V0h-28.7v-3.5h6.3l.8-.7v-38.5l-.8-.7h-6.3v-3.5l5.5-.1 5.7-.2 5.4-.5.7.8v10.7h.8ZM387.5 18h5v11h359.6V18h5v16H387.5Z"/><path fill="#D4A23A" d="M558.3 34h28c0 6.4-6.3 11.5-14 11.5s-14-5.1-14-11.5m14-28.5c.8 8 4.5 10.4 4.5 14.5 0 2.5-2 4.5-4.5 4.5s-4.5-2-4.5-4.5c0-4.1 3.7-6.5 4.5-14.5"/></svg></a>
+    <nav class="menu" aria-label="주요 메뉴">
+      <a href="#method">탐구 방식</a>
+      <a href="#path">탐구의 길</a>
+      <a href="#lab">SD-Lab</a>
+      <a href="#winter">겨울 프로그램</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <span class="eyebrow">Science Drawer · 과학자의 서랍</span>
+        <h1>서랍을 열면,<br>탐구가 시작됩니다</h1>
+        <p class="lead">과학고 실험실에서 하던 탐구를 어느 학교 학생이든 직접 해 볼 수 있게. 과학자의 서랍은 정답을 외우는 대신, 질문을 세우고 실험을 설계하는 법을 가르칩니다.</p>
+        <div class="actions">
+          <a class="btn solid" href="#winter">겨울 탐구 프로그램</a>
+          <a class="btn line" href="#method">탐구 방식 보기</a>
+        </div>
+      </div>
+      <p class="tagline">A drawer full of scientific curiosity.<small>과학적 호기심이 가득한 서랍</small></p>
+    </div>
+  </section>
+
+  <section class="band" id="method">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">01 · Method</span>
+        <div>
+          <h2>결과보다 과정을 가르칩니다</h2>
+          <p>정답이 정해진 실험은 금방 잊힙니다. 과학자의 서랍은 학생이 스스로 생각하고 결정한 탐구가 오래 남는다고 믿습니다.</p>
+        </div>
+      </div>
+      <div class="cards">
+        <article class="card"><span class="no">No. 01</span><h3>질문을 세웁니다</h3><p>교과서의 결론을 확인하는 데서 멈추지 않고, 궁금한 점을 실험으로 답할 수 있는 탐구 질문으로 바꿉니다.</p></article>
+        <article class="card"><span class="no">No. 02</span><h3>실험을 설계합니다</h3><p>준비물을 직접 고르고, 바꿀 조건과 고정할 조건을 정합니다. 같은 주제라도 학생마다 실험이 달라집니다.</p></article>
+        <article class="card"><span class="no">No. 03</span><h3>결과를 해석합니다</h3><p>예상과 다른 결과도 괜찮습니다. 오차가 어디서 왔는지 따져 보는 일이 탐구의 절반입니다.</p></article>
+        <article class="card"><span class="no">No. 04</span><h3>기록으로 남깁니다</h3><p>탐구 과정을 보고서로 정리해, 학교생활기록부와 진학 서류의 바탕이 되는 '스스로 소화한 탐구 경험'을 만듭니다.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="path" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">02 · Path</span>
+        <div>
+          <h2>설계하고, 실험하고, 기록합니다</h2>
+          <p>하나의 탐구는 화면에서 시작해 손으로 이어지고 기록으로 끝납니다.</p>
+        </div>
+      </div>
+      <div class="path">
+        <div class="step"><div class="k"><span>STEP 1</span><span class="tag">준비 중</span></div><h3>온라인 실험실</h3><span class="en">SD-Lab</span><p>실제 실험 전에 화면에서 준비물을 고르고 조건을 설계해 봅니다. 설계가 바뀌면 결과도 바뀝니다.</p></div>
+        <div class="step"><div class="k"><span>STEP 2</span><span class="tag">준비 중</span></div><h3>탐구 키트</h3><span class="en">Kit</span><p>설계한 대로 직접 실험합니다. 측정 도구와 워크북 중심의 안전한 키트부터 시작합니다.</p></div>
+        <div class="step"><div class="k"><span>STEP 3</span><span class="tag">준비 중</span></div><h3>탐구노트</h3><span class="en">Notebook</span><p>가설, 측정값, 분석, 다음 질문까지 기록합니다. 기록이 곧 나의 탐구 이력이 됩니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="lab" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">03 · SD-Lab</span>
+        <div>
+          <h2>층을 오르듯, 수준에 맞는 서랍을 엽니다</h2>
+          <p>SD-Lab은 실험실 학교를 배경으로 한 온라인 실험실입니다. 학생은 자기 단계의 층에서 과목 방을 지나 실험이 담긴 서랍을 엽니다.</p>
+        </div>
+      </div>
+      <div class="dir" role="table" aria-label="SD-Lab 층 안내">
+        <details class="drw"><summary class="row"><div class="fl">4F</div><div class="nm">Advanced Research</div><div class="lv">심화 · 과학고</div><div class="who">Fellow <span class="open"></span></div></summary>
+          <ul class="list">
+            <li><span class="sub">물리</span><span class="ex">영상 분석으로 중력가속도 구하기</span><span class="ex">렌즈의 초점거리를 정밀하게 재기</span></li>
+            <li><span class="sub">화학</span><span class="ex">여과로 미지 혼합물의 조성 밝히기</span><span class="ex">삼투압으로 녹아 있는 물질의 양 추정하기</span></li>
+            <li><span class="sub">생명과학</span><span class="ex">대장균에서 플라스미드 DNA 뽑아내기</span><span class="ex">오염된 물에서 식물은 어떻게 자랄까</span></li>
+            <li><span class="sub">지구과학</span><span class="ex">지진파 도착 시간으로 진앙 찾기</span><span class="ex">일기도를 직접 그려 내일 날씨 읽기</span></li>
+          </ul></details>
+        <details class="drw"><summary class="row"><div class="fl">3F</div><div class="nm">Research</div><div class="lv">고등</div><div class="who">Researcher <span class="open"></span></div></summary>
+          <ul class="list">
+            <li><span class="sub">물리</span><span class="ex">스마트폰 센서로 내 주변을 재 보기</span><span class="ex">에어백은 왜 충격을 줄여 줄까</span></li>
+            <li><span class="sub">화학</span><span class="ex">농도가 다르면 물은 어디로 움직일까</span><span class="ex">설탕을 넣으면 물이 끓는 온도가 바뀔까</span></li>
+            <li><span class="sub">생명과학</span><span class="ex">감자 디스크로 효소 반응 속도 재기</span><span class="ex">숨을 수 있는 색이 살아남을까</span></li>
+            <li><span class="sub">지구과학</span><span class="ex">페트병 속 이산화 탄소, 정말 온실 효과일까</span><span class="ex">차갑고 짠 물은 왜 바다 밑으로 흐를까</span></li>
+          </ul></details>
+        <div class="row" role="row"><div class="fl" role="cell">2F</div><div class="nm" role="cell">Inquiry</div><div class="lv" role="cell">중등</div><div class="who" role="cell">Apprentice</div></div>
+        <div class="row" role="row"><div class="fl" role="cell">1F</div><div class="nm" role="cell">Discovery</div><div class="lv" role="cell">초등</div><div class="who" role="cell">Explorer</div></div>
+      </div>
+      <p class="dir-note">물리 · 화학 · 생명과학 · 지구시스템과학, 네 과목의 방이 층마다 있습니다.</p>
+
+    </div>
+  </section>
+
+  <section class="band winter" id="winter">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">04 · Winter Program</span>
+        <div>
+          <h2>겨울 탐구 프로그램</h2>
+          <p>방학 동안 하나의 탐구를 처음부터 끝까지 직접 설계하고 수행합니다. 첫 프로그램은 울산 더원수학과학학원과 함께 시범 운영합니다.</p>
+          <span class="status">모집 준비 중</span>
+        </div>
+      </div>
+      <div class="wgrid">
+        <dl class="facts">
+          <div class="f"><dt>기간</dt><dd class="tbd">겨울방학 중 · 세부 일정 추후 안내</dd></div>
+          <div class="f"><dt>대상</dt><dd class="tbd">추후 안내</dd></div>
+          <div class="f"><dt>탐구 주제</dt><dd class="tbd">추후 안내</dd></div>
+          <div class="f"><dt>구성</dt><dd class="tbd">회차 · 정원 추후 안내</dd></div>
+          <div class="f"><dt>수강료</dt><dd class="tbd">추후 안내</dd></div>
+        </dl>
+        <div class="apply">
+          <h3>수강 신청</h3>
+          <p>신청은 운영 학원의 온라인 신청서로 받습니다. 모집이 시작되면 이곳에 신청서가 열립니다.</p>
+          <a class="btn" aria-disabled="true" role="link">신청서 오픈 예정</a>
+          <p class="legal">운영 학원: 더원수학과학학원 · 학원등록번호 제6696호(울산광역시강남교육지원청) · 학교교과교습학원(보습) · 교습비는 모집 시 함께 안내합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="lk"><svg xmlns="http://www.w3.org/2000/svg" width="1109" height="100" aria-label="과학자의 서랍 로고 — 국·영문 병기 가로 반전" role="img" viewBox="0 0 1109 100"><title>과학자의 서랍 로고 — 국·영문 병기 가로 반전</title><!--! Science Drawer / 과학자의 서랍 logo, final 2026-10-27 — bilingual horizontal lockup. Letters outlined to paths. Type: Gowun Batang Bold / 고운바탕 Bold (SIL OFL 1.1; Yanghee Ryu) + Brygada 1918 SemiBold (SIL OFL 1.1; Mateusz Machalski, Borys Kosmynka, Przemek Hoffer). Colors: navy #0F1A2D, gold #D4A23A, divider #A9AEB6.--><path fill="#FFF" d="M49.8 66.8q-1.3 0-1.7-1.8t-.5-4.5V10.8q0-2-.2-3.1-.1-1-.7-1.8-.7-.7-2.1-1.6-.8-.4-1.1-1t0-1.5Q44.1.6 45.1.2t2.2-.1q1.7.3 3.6 1.1l3 1.8q1.4.9 1.4 1.8l-.4 2.6-.2 3.5-.1 21q3.3-.2 5.9-1 2.5-.6 3.5-1 .8-.2 1.3 0t.9.6q.5.7 1.1 2t.6 2-.9 1.4-1.4.7q-2.7-.4-5.6-.5h-5.4v19.2l-.2 3.4q-.3 2-.8 3.8-.5 1.9-1.4 3-1 1.3-2.4 1.3M7.5 51.4H6.2q-.6 0-1.5-.5l-1.6-1-2-1.6q-1-.9-1-1.2 0-.8.7-1.6t1.3-1q2.6.3 5.5.3h4.9l1.8-.1 1.9-.1L16 35q0-2.4-.4-3.7-.3-1.2-1.5-2l-1-1q-.2-.4.1-1 .6-1.4 1.6-1.7t1.9-.2 2.5 1q1.4.7 2.2 1.3 1.5 1 1.6 1.7-.3 1.2-.4 2.6l-.2 2.8-.3 9.4 7.8-1 7.5-1.3q3.5-.7 6.1-1.4 1.2-.4 1.8.1t.6 1.2q0 1.2-.6 2-.6 1-2.1 1.4-1.9.5-4.9 1L32 47.4l-6.8 1-5.9 1-4.2.6-4.2.7zm23.7-14.1q-.7 0-1.2-.8-.3-.6-.1-2.1l.5-3.2.8-5.1.6-5.7.4-5.7-.1-1h-.8l-10.6.7q-2 0-4.1.4l-4 .7q-1.4.3-2 .2T9.4 15q-1-.7-2.1-1.8l-1.4-1.4q-.2-.7.6-1.7t1.8-.9q1.6.3 4.1.5 2.6.2 5.1.1 2.4 0 4.2-.2l4.2-.2q2.6-.2 4.1-.5l2.8-.8q1-.4 2 0l5 1.4.7.4q.2.3 0 1.1l-.5 2-.5 2.6-.4 1.8-1 5-1 5.7q-.6 2.8-1.2 4.6-.5 2.1-1.8 3.4-1.2 1.3-2.9 1.2m59.6 5.2q-4.9 0-8.2-1.6t-5-4.2Q76 34 76 31.5q0-2.8 1.4-5.4t4.6-4.5q3.3-1.7 8.6-1.8 3.4 0 6.8 1 3.5 1 5.7 3.4 2.3 2.3 2.3 6.5 0 2.9-1.6 5.5-1.6 2.7-4.8 4.4-3.3 1.8-8.2 2m27 1.1q-1.2 0-1.7-1.5-.3-1.7-.4-3.8V10.8q0-2-.2-3.2-.2-1-.8-1.7t-2-1.7q-.8-.4-1.2-1t.1-1.4q.6-1.2 1.6-1.6t2.1-.1q1.7.3 3.5 1.1t3 1.7q1.4.9 1.4 1.9l-.4 2.6-.2 3.5v12.7q2.9-.3 5.2-1l3.3-.8q.9-.3 1.4-.2.5.2.8.7.6.7 1.2 2t.6 2-.9 1.4q-1 .8-1.5.8-2.3-.4-5-.5l-5.1-.1V34q0 1.8-.4 4t-1.5 3.8q-1 1.7-2.8 1.7m-.7 28q-1 0-1.5-.4L115 70q-.3-1-.3-2.4V64l-.2-11.3q0-.7-.3-.9l-.7-.1-6.7.3-10 .6-4.6.6q-2.7.3-4.6.8-1.4.4-2 .2-.6 0-1.2-.5-1-.7-2.2-1.9t-1.6-2q0-.7.7-1.6t1.8-1l2.8.3 3.6.3h3.7l7-.2q3.7 0 7.1-.3l4-.5q1.9-.3 3.3-.8l.9-.3 1 .1 4.9 1q1.2.2 1 1.4l-.3 2-.3 2.5V55l-.1 7.9q0 1.9-.6 4-.5 1.9-1.5 3.2t-2.5 1.4m-42-53q-1.3.3-2 .2-.5 0-1.4-.8l-1.4-1.5q-.9-1-1.2-1.6t.6-1.6q.7-.8 1.3-.8l3.3.4 4.6.1 5 .1h4.6q7.7-.3 12.6-1 5-.6 6.8-1 1.5-.4 2 .4.7 1 1 2l.3 1.5q0 .6-.9 1.4t-1.3.7l-5.3-.1h-7.1q-3.8 0-7 .2l-4.6.2-5.3.5zm15.5 19q3.7 0 5.8-2.1 2-2 2-5.1 0-1.5-.8-3-.7-1.5-2.3-2.6-1.6-1-4.2-1-4.4 0-6.3 2.1-2 2.3-2 5.2 0 2.8 2.2 4.7 2 2 5.6 1.9M87.7 8.8 84.4 8q-1.8-.6-3.5-1.4Q79 6 78.2 5.1q-.4-.7.1-2Q78.8 2 80 1.8q2.8.6 5.8.9t5.8.3q2.4 0 4.6-.2l3.7-.3q1.2 0 2 .8.8.7.8 1.3-.1.6-.7 1.6-.6 1.2-1.5 1.7-1.3.4-3.6.7t-4.8.3-4.3-.2m53.1 39.8q-.6.4-1.7.6h-2.3q-1-.3-1.3-1.1l.1-1q.2-.5.8-1 3.8-2.9 7.3-7 3.4-3.9 6-8.1 2.7-4.3 4.3-8t1.6-6.3q0-.8-.4-1.7l-4.5.5-4.5.6h-.1q-1.3.3-1.8.2t-1.3-.7l-1.6-1.6q-1-1.2-1.4-2-.2-.6.5-1.5.8-1 1.4-1 2.4.6 5.7.7h7.2q7.8-.3 12-1l6.2-1h1.2q.4.2.7.6.6 1 1 2.2l.4 1.7q0 .6-.8 1.4-1 .8-1.4.8l-5.5-.3-7.2.1 1.8 1.6q.7.9.6 1.5-.8 2.4-1.8 4.7t-2.3 4.7q4.5 3.8 7.7 5.6l5.6 2.9q1.1.6 2 2 .8 1.5 1.3 2.9.5 1.5.6 2.5 0 1.2-1.6 2-1.4.9-2.7.6-1.3-1.7-3.2-3.8l-4.2-4q-2-2.2-4-4-2-1.9-3.6-3-2.5 4-5.4 7.4t-6 6.1q-2.8 2.7-5.4 4.2M184.5 67q-1.3 0-1.6-1.8-.3-1.3-.3-3l-.2-3.6V11.5q0-2.6-.4-4.1t-2.8-3l-.8-.6q-.4-.4-.4-1t.8-1.8q.8-1 2-1 .9 0 2.3.4l2.9 1 2.5 1.3q1.4 1 1.4 1.8l-.3 3.2q-.3 2.2-.3 4.2v18.9q3.3-.2 6-.9l3.8-1q.8-.3 1.3-.1t.8.7q.6.7 1.2 2t.6 2-.9 1.4-1.5.7q-2.6-.4-5.7-.5-3-.2-5.6-.1v20.6L189 59q-.3 2-.9 3.8-.5 1.9-1.5 3.1t-2.2 1.2m42.4-32.3q-4.6 0-8.4-1.7-4-1.7-6.2-5-2.4-3.1-2.4-7.3 0-4 2.4-7.2 2.3-3.3 6-5.3 4-2 8.5-2 4.6-.2 8.4 1.4 3.8 1.8 6.2 4.9 2.3 3.1 2.3 7.6 0 4-2.3 7.3-2.4 3.3-6.2 5.2t-8.3 2m27.7 32q-1.3 0-1.7-1.8t-.3-4.5l-.1-4.2V10.8q0-2-.2-3.2-.1-1-.8-1.7-.6-.7-2-1.6-.8-.4-1.1-1t0-1.5q.6-1.2 1.5-1.6t2.2-.1q1.7.3 3.6 1.1 1.9 1 3 1.8 1.4.9 1.4 1.8l-.4 2.6-.2 3.5v44.4q0 1.5-.3 3.4-.2 2-.8 3.8-.5 1.9-1.4 3-1 1.3-2.4 1.3m-27.8-37q4.1-.1 6.9-2.7 2.7-2.6 2.7-6.9 0-4.7-2.7-7t-6.8-2.1q-4.3.2-7.1 2.8t-2.8 6.8 2.8 6.7 7 2.4m-15.4 21.7H210q-.6 0-1.4-.5l-1.7-1.1q-1.2-.7-2.2-1.6-1-.8-1-1 0-1 .8-1.8.7-.9 1.3-1.1 2.6.3 5.6.4t4.8.1q3.2 0 7.5-.3l8.9-.7q4.5-.5 8.6-1.2t6.9-1.5q1.2-.4 1.8.1t.6 1.1q0 2.7-2.9 3.5-1.8.5-5 1l-6.7 1-7 1-6 .7q-3 .3-6.4 1zm127.2 15.3q-1.4 0-1.7-1.8t-.4-4.5V25.8l-1.8.1-1.3.2q-1.7.1-3.2.4l-3.4.8q-1.5.5-2.7 0l-1.4-.9-1.9-1.3-.9-.9q-.3-.9.6-2 .7-1 1.4-1 1.3.3 3.1.4t3.7.2l3.3-.2 4.4-.1V10.8l-.1-3.1q-.2-1-.8-1.8-.7-.7-2.1-1.6-.8-.4-1.2-1t.1-1.5Q333 .6 334 .2t2.2-.1q1.7.3 3.5 1.1 1.9 1 3 1.8 1.4.9 1.4 1.8l-.3 2.6q-.3 1.8-.3 3.5v44.4q0 1.5-.3 3.4-.2 2-.7 3.8-.5 1.9-1.4 3-1 1.3-2.4 1.3m-47-20.1q-1.5 1-3.2.9-1.7-.2-2.1-1.4v-1q.2-.5 1-1 3.2-2.5 6.4-6 3.2-3.4 6-7.4 2.6-3.9 4.7-7.7t3.3-7l.7-2.3q.3-1.1.2-1.9t-.7-1.5-1.2-1q-1-1-.3-2.1.8-1.4 2-1.6t2.4.3q1.7.7 3.7 2 2 1.5 2.9 2.7.4.4.6 1v.7l-1.4 2.4L315 18l-2.2 4.2-2.5 4.2q4 4 7.3 6l5.3 3.4q1 .8 1.8 2.4.6 1.6 1 3.3.3 1.6.2 2.7 0 .6-.9 1.2-.7.7-1.7 1-1 .2-1.8-.2-1.5-2.2-4-5.2l-5-6q-2.6-3-4.6-5-3.5 5-7.6 9.5-4.1 4.3-8.5 7.2m78 25.3q-1 0-1.6-1-.6-.7-.6-2.6l-.1-13v-.6q0-3-.3-4.4t-2-2.7q-1.3-1-.6-2.4.6-1.2 1.6-1.4 1-.3 2 0 1.3.3 3 1.2t2.4 1.4q.8.7 1.1 1.2t.3.8l-.3 1.5-.1 1.8h11l6.3-.3 4.7-.3q0-2.6-.2-3.8-.3-1.3-1.7-2.3-.6-.4-1-1-.2-.6.2-1.4.7-1.2 1.6-1.6 1-.3 2 0l2.5.9q1.1.5 2.3 1.3 1.8 1 2 2-.4 1.5-.5 3.8l-.2 3.7V65q0 2.8-1.5 4.6-1.5 2-3.3 2-1 0-1.5-.7t-.6-1.9h-4.9l-6.5.1q-3.4 0-6.5.2l-5 .1q-.6 1.3-1.8 2-1.1.7-2.2.7M361.4 40q-2-.4-3-2-1.1-1.7-1.1-4.2v-7.9q-.1-.7-1-1.4l-1.8-1.2q-1-.6-1-1-.1-.7.5-1.8.7-1 1.5-1l2.7.2q1.3.2 2.7.2 4 .1 8.3-.1l8.4-.5.4-3.5.3-3.5q0-.7-.2-.9l-.8-.1-4.7.1-6.2.4-2.4.2-2.8.5-2 .3q-.6 0-1.3-.6l-1.2-1q-.8-.7-1.3-1.4l-.7-1q0-.4.6-1.3.6-.7 1.4-.9 2.9.6 6 .6h6.1l5.4-.4q2.7-.2 4.8-.9l1-.3 1 .2 5 1.6q1 .5.7 1.8l-.7 2-.7 2.2-1.8 5.6 1.5 1.2q.8.7.8 1 0 1-.8 1.9-.6.9-1.5 1h-5.7l-7 .2-6.4.3v6.8q0 1.6.3 2t1.7.3q3.3 0 7.1-.5t7.3-1.1l6.6-1.4q3-.8 4.5-1.4 1.2-.6 1.9-.1t.7 1q0 1.2-1.1 2-1 .9-3.2 1.8-2 .8-5.5 1.7l-7.7 2q-4.1 1-8.3 1.6-4.1.6-7.3.7m37.9-.4q-1.4 0-1.7-1.5-.4-1.9-.5-4.2v-23q0-2-.2-3.2-.2-1-.8-1.7t-2-1.7q-.8-.4-1-1-.5-.6 0-1.4.5-1.2 1.5-1.6t2.1-.1q1.8.3 3.6 1.1l3 1.7q1.3.9 1.3 1.9l-.4 2.6-.2 3.5v11q2.9-.3 5.2-1l3.4-.8q.8-.3 1.3-.2.5.3.8.7.6.7 1.2 2t.6 2-.9 1.4q-1 .8-1.5.8-2.3-.4-4.9-.5l-5.2-.1v3.4q0 1.8-.4 4.1t-1.5 4q-1 1.6-2.8 1.6m-24.8 25h5l6.3-.1 6-.2 4.8-.3v-7.7h-10.8l-6.3.2-5 .2Zm-94.8 15h3.7v8.2h136.1v-8.2h3.7v11.9H279.6Z"/><path fill="#D4A23A" d="M340.9 91.4h20.9c0 4.8-4.7 8.6-10.5 8.6S341 96.2 341 91.4M351.3 70c.6 6 3.4 7.8 3.4 10.8 0 2-1.5 3.4-3.4 3.4a3.3 3.3 0 0 1-3.3-3.4c0-3 2.8-4.8 3.3-10.8"/><path fill="#FFF" d="M517.4 16.5q0 2.9 1.6 4.8 1.6 2 4.2 3.2Q526 26 529 27l6.2 2.6q3.2 1.4 5.9 3.3 2.6 1.9 4.1 4.8 1.6 2.8 1.6 7 0 5-2.4 8.5-2.3 3.5-6.4 5.4-4.3 1.8-10 1.8-4 0-7.5-1-3.4-1-6.2-2.7l-1.6 2.8H510q-.1-2.7-.6-6l-1-6.2-1.2-5.6 2.7-.8q2.6 6.2 5.9 9.7 3.2 3.6 6.6 5.2 3.3 1.4 6.3 1.4 2.5 0 5-1 2.3-.8 3.9-2.8t1.6-4.8q0-3-1.6-5.2-1.6-2-4.3-3.4-2.6-1.5-5.7-2.7-3.2-1.2-6.3-2.6-3.2-1.4-5.8-3.2-2.7-1.8-4.3-4.5-1.6-2.6-1.6-6.6 0-4.7 2.4-8.1t6.5-5.3 9.4-1.8q3.4 0 6.3 1 2.9.8 5.5 2.6l1.6-2.8h2.8q.3 4 1 8.2l1.5 8-2.6.8q-2.2-6-5.1-9.1-3-3.1-6.1-4.3T527 8.4q-4.2 0-6.9 2.2t-2.7 6m57.2 43.9q-5.3 0-9.6-2.3-4.4-2.3-7-6.7-2.7-4.4-2.7-10.4 0-6.2 3-10.6 2.8-4.5 7.5-6.8 4.7-2.4 10.3-2.4 4 0 7.2 1.4t5 3.6 2 5.2q0 2.3-1.4 3.7t-3.4 1.4-3.3-1.3q-1.4-1.3-1.4-3.4 0-1.3.9-2.7t3.2-1.8q-1.5-1.6-3.7-2.5t-5-.8q-4.1 0-6.5 2.1-2.5 2.2-3.6 5.9-1 3.7-1 8.5 0 5.2 1.4 8.8t4 5.6q2.5 1.9 5.9 1.9 3.6 0 6.6-2.2 3-2 5.5-5.3l2.1 1.8q-1.8 2.6-4 4.7-2.1 2.1-5 3.3-3 1.3-7 1.3m21.6-.8v-2.8h5l.6-.6V25.4l-.5-.6h-5.1V22h4.4l5-.2 4.5-.4.6.6v34.2l.5.6h5.1v2.8Zm9.8-44.5q-2.2 0-3.8-1.7-1.7-1.6-1.7-3.8 0-2.4 1.7-4T606 4q2.3 0 4 1.6 1.5 1.6 1.5 4 0 2.2-1.6 3.8-1.6 1.7-3.9 1.7m38.5 41.7q4.2 0 7.3-2 3-1.8 5.2-4.2l2.2 1.9q-1.7 2-3.9 3.8-2.1 1.9-5.2 3-3 1.1-7.5 1.1-5.2 0-9.6-2.3t-7-6.7q-2.8-4.5-2.8-10.6t2.7-10.5 7-6.7 9.7-2.4q5 0 8.9 2 3.8 2 6 6 2 4 2 10.4h-28.2v-2.8h18.3q-.3-6.3-2-9.5-1.8-3.3-5.6-3.3-3.2 0-5.2 2.1t-3 5.9q-.9 3.8-.9 8.8t1.5 8.5q1.5 3.6 4 5.5 2.7 2 6.1 2m61.5-.6.7.6h5v2.8h-20v-2.8h5l.5-.6V33q0-3.9-1.3-5.8-1.3-2-4.4-2-3 0-5.6 2.2-2.7 2-5.7 7.2v21.7l.6.6h5.1v2.8h-20.2v-2.8h5.2l.5-.6V25.4l-.5-.6h-5.2V22h4.4q2.4 0 4.7-.2l4.3-.4.6.6v7.3h.5q2.1-3.6 5.5-5.8 3.3-2.3 8.7-2.3 4.3 0 6.8 1.4 2.6 1.4 3.7 3.8t1.1 5.3Zm32 4.2q-5.3 0-9.7-2.3t-7-6.7-2.6-10.4q0-6.2 2.9-10.6 2.8-4.5 7.6-6.8 4.7-2.4 10.2-2.4 4 0 7.2 1.4t5.1 3.6 1.9 5.2q0 2.3-1.4 3.7t-3.3 1.4-3.3-1.3q-1.5-1.3-1.5-3.4 0-1.3 1-2.7.8-1.4 3.1-1.8-1.4-1.6-3.7-2.5t-5-.8q-4.1 0-6.5 2.1-2.5 2.2-3.5 5.9-1.1 3.7-1.1 8.5 0 5.2 1.4 8.8t4 5.6q2.6 1.9 6 1.9 3.5 0 6.6-2.2 3-2 5.4-5.3L754 51q-1.9 2.6-4 4.7-2.2 2.1-5 3.3-3 1.3-7 1.3m43.4-3.6q4.2 0 7.3-2 3-1.8 5.2-4.2l2.2 1.9q-1.7 2-3.8 3.8-2.2 1.9-5.3 3t-7.5 1.1q-5.2 0-9.6-2.3t-7-6.7q-2.8-4.5-2.8-10.6t2.8-10.5 7-6.7 9.6-2.4q5 0 9 2 3.7 2 5.8 6 2.2 4 2.2 10.4h-28.3v-2.8h18.4q-.4-6.3-2.1-9.5t-5.6-3.3q-3.1 0-5.1 2.1t-3 5.9-1 8.8 1.6 8.5q1.4 3.6 4 5.5 2.6 2 6 2M847.2 6q5.7 0 10.6 1.6 5 1.6 8.7 4.8t5.8 8 2.1 11.3q0 6.3-2.2 11.4t-6 8.8-8.7 5.7-10.3 2H821v-2.8h5.4l.7-.6V9.3l-.7-.5H821V6Zm-1.5 50.8q5.4 0 9.6-2.9t6.5-8.3 2.4-12.8q0-7.1-2.5-12.6t-6.8-8.5q-4.4-3-10-3h-7.6l-.5.6v47l.5.5Zm51.1-26.2q2-3.8 5.2-6.6t7.6-2.8q2.2 0 3.6.8 1.4 1 2 2.3.7 1.4.7 2.9 0 2.4-1.5 4-1.6 1.7-4.2 1.7-2.4 0-4-1.7-1.8-1.6-1.8-4 0-1.1.7-2.4.5-1.2 1-1.7v2.5q-1.5.5-2.9 1.5-1.4 1.1-3 3.3-1.5 2.1-3.4 6.2Zm0 25.6.6.6h8v2.8h-23v-2.8h5l.6-.6V25.4l-.6-.6h-5V22h4.3l4.6-.2 4.3-.4.6.6v8.6h.6Zm54.4 4.2q-2.7 0-4.7-1t-3-3.4V35.4q0-5-1.6-7.8-1.8-3-6.5-3-2 0-4 .4-1.7.5-3.5 1.6 1.3.7 2 1.9t.6 2.5q0 2.1-1.4 3.4t-3.4 1.3-3.3-1.4q-1.4-1.4-1.4-3.7t1.4-4q1.6-1.8 4-3 2.5-1.2 5.4-1.8t5.8-.6q3.9 0 7.3 1.2 3.3 1 5.4 3.9 2 2.8 2 8v18.2q0 1 .6 2.1.5 1 2 1 1 0 1.8-.6t1.5-1.6l2.2 1.9q-1 1.3-2.2 2.5t-2.8 1.9q-1.7.7-4.2.7m-18.8 0q-6.3 0-10-3.1-3.8-3-3.8-7.8 0-4.6 3.7-7.7t10-3.1q4.2 0 7 1.3t4.3 3.1v3.7q-2.2-2.3-4.6-3.4-2.3-1-4.5-1-3.3 0-5.2 2t-1.9 5.1q0 3.2 1.9 5.2t5.2 2q2.2 0 4.5-1 2.4-1 4.6-3.5V56q-1.6 1.7-4.3 3-2.8 1.4-7 1.4M1007 22h14.8v2.8h-4.8l-11.7 34.8h-5.2l-9.5-24.8h-.4l-9.8 24.8h-5.2l-12.9-34.8h-4.9V22h20.1v2.8H973l-.6.6 8.3 23.2h.4l7.6-19.1-1.7-4.7h-3.7V22h18.1v2.8h-4.3l-.6.6 8.6 23.2h.4l7.7-23.2-.5-.6h-5.6Zm38.3 34.8q4.1 0 7.2-2 3-1.8 5.2-4.2l2.2 1.9q-1.7 2-3.8 3.8-2.2 1.9-5.2 3t-7.6 1.1q-5.2 0-9.6-2.3t-7-6.7-2.7-10.6 2.7-10.5q2.6-4.4 7-6.7 4.4-2.4 9.6-2.4 5 0 8.8 2t6 6 2.2 10.4H1032v-2.8h18.4q-.3-6.3-2.1-9.5t-5.6-3.3q-3.1 0-5.1 2.1t-3 5.9-1 8.8 1.6 8.5q1.4 3.6 4 5.5 2.6 2 6 2m36.5-26.2q2-3.8 5.3-6.6t7.5-2.8q2.2 0 3.7.8 1.3 1 2 2.3.6 1.4.6 2.9 0 2.4-1.5 4-1.6 1.7-4.2 1.7-2.4 0-4-1.7t-1.7-4q0-1.1.6-2.4t1.1-1.7v2.5q-1.6.5-3 1.5-1.4 1.1-3 3.3-1.4 2.1-3.4 6.2Zm0 25.6.6.6h8v2.8h-23v-2.8h5l.6-.6V25.4l-.6-.6h-5V22h4.4l4.5-.2 4.3-.4.6.6v8.6h.6ZM813.1 74h4v8.8h288V74h4v12.8H813Z"/><path fill="#D4A23A" d="M949.8 86.8h22.5c0 5.1-5 9.2-11.3 9.2-6.1 0-11.2-4-11.2-9.2M961 64c.7 6.4 3.6 8.3 3.6 11.6 0 2-1.6 3.6-3.6 3.6s-3.6-1.6-3.6-3.6c0-3.3 3-5.2 3.6-11.6"/><path fill="#A9AEB6" d="M464.5 12h1.2v76h-1.2z"/></svg></div>
+    <div class="meta">
+      <span>상호 과학자의 서랍</span>
+      <span>sciencedrawer.com</span>
+    </div>
+    <p class="copy">© 2026 Science Drawer. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
